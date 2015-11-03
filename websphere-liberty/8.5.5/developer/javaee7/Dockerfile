@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM websphere-liberty:webProfile7
+FROM websphere-liberty-ppc64le:webProfile7
 
 COPY server.xml /opt/ibm/wlp/usr/servers/defaultServer/ 
 RUN installUtility install --acceptLicense defaultServer \
