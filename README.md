@@ -1,12 +1,7 @@
-# Unofficial WebSphere Application Server and Docker
-This project contains build scripts for Docker images (Dockerfiles) and Docker related utilities for WebSphere Application Server running on ppc64le. Currently resources are available for:
+# Personal testing/educational WebSphere Application Server and Docker project
+This project contains build scripts for Docker images (Dockerfiles) and Docker related utilities for WebSphere Application Server running on ppc64le. This is for personal testing/educational purpose only. 
 
-* [WebSphere Application Server Liberty Profile](websphere-liberty)
-
-# Issues and contributions
-
-For issues relating specifically to the Dockerfiles and scripts, please use the [GitHub issue tracker](https://github.com/WASdev/ci.docker/issues). For more general issue relating to IBM WebSphere Application Server Liberty Profile you can [get help](https://developer.ibm.com/wasdev/help/) through the WASdev community or, if you have production licenses for WebSphere Application Server, via the usual support channels. We welcome contributions following [our guidelines](https://github.com/WASdev/wasdev.github.io/blob/master/CONTRIBUTING.md).
+Visit [WebSphere Application Server and Docker](https://github.com/WASdev/ci.docker) for official project
 
 # License
-
-The Dockerfiles and associated scripts found in this project are licensed under the [Apache License 2.0](LICENSE).
+As this project was forked from above, the Dockerfiles and associated scripts found in this project are licensed under the [Apache License 2.0](LICENSE) as well.
