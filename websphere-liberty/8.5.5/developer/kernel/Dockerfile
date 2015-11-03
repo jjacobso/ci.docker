@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM ubuntu:14.04
+FROM ppc64le/ubuntu:trusty
 
 MAINTAINER Kavitha Suresh Kumar <kavisuresh@in.ibm.com> (@kavi2002suresh)
 
@@ -22,7 +22,7 @@ RUN apt-get update \
 
 # Install JRE
 ENV JRE_VERSION 1.8.0_sr1fp10
-RUN JRE_URL=$(wget -q -O - https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/downloads/jre/index.yml | sed -n '/'$JRE_VERSION'/{n;p}' | sed -n 's/\s*uri:\s//p' | tr -d '\r') \
+RUN JRE_URL=http://<INSERT PATH TO PPC64LE IBM JAVA JRE> \
     && wget -q $JRE_URL -U UA-IBM-WebSphere-Liberty-Docker -O /tmp/ibm-java.bin \
     && chmod +x /tmp/ibm-java.bin \
     && echo "INSTALLER_UI=silent" > /tmp/response.properties \
